@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  .col-1,
+  .col-2 {
+    /* border: 1px solid #111; */
+    position: relative;
+    z-index: 2;
+  }
+  .grid-box {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    /* border-right: 1px solid #a1a1a1; */
+  }
+  .grid-slogan-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .slogan-text {
+    width: 80%;
+    font-size: 2em;
+    color: #111;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .grid-image-box {
+    padding: 15px;
+  }
+  .image-box {
+    height: 100%;
+    width: 100%;
+    background-image: url(../../assets/LandingPage/FoodDonation.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .grid-donate-box {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .grid-count-box {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    gap: 20px;
+    padding: 30px;
+  }
+  .donation-count {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+  }
+  .home-wrapper {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    z-index: 1;
+  }
+  .h-110vh {
+    height: calc(110vh - 64px);
+  }
+  .grid-rows-40-1fr {
+    display: grid;
+    grid-template-rows: 40% 1fr;
+    min-height: 100%;
+  }
+  .grid-box {
+    overflow: hidden;
+  }
+  .image-box {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+  }
